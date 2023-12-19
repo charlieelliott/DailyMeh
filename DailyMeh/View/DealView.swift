@@ -97,7 +97,14 @@ struct DealView: View {
                 .font(.headline)
                 .fontWeight(.bold)
             
-            Text(viewModel.response?.deal.story.body ?? "")
+            if let body = try? AttributedString(markdown: viewModel.response?.deal.story.body ?? "", 
+                                                options: AttributedString.MarkdownParsingOptions(interpretedSyntax: .inlineOnlyPreservingWhitespace)
+) {
+                Text(body)
+                    .accentColor(accentColor)
+            } else {
+                Text(viewModel.response?.deal.story.body ?? "")
+            }
         }
         .foregroundStyle(foregroundColor ?? .white)
         .padding(16)
