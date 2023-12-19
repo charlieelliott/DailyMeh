@@ -7,16 +7,6 @@
 
 import Foundation
 
-protocol Networking {
-    func fetchDailyMeh() async throws -> Response
-}
-
-enum NetworkManagerError: Error {
-    case malformedURL
-    case httpError
-    case jsonParsing
-}
-
 final class NetworkManager: Networking {
     
     private func apiKey() -> String {

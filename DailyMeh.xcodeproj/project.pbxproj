@@ -17,12 +17,8 @@
 		B10A90662B30B861002FED58 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10A90652B30B861002FED58 /* NetworkManager.swift */; };
 		B10A90682B30BAB1002FED58 /* DealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10A90672B30BAB1002FED58 /* DealViewModel.swift */; };
 		B10A906D2B30BD25002FED58 /* MockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = B10A906C2B30BD25002FED58 /* MockResponse.json */; };
-		B10A906E2B30BD25002FED58 /* MockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = B10A906C2B30BD25002FED58 /* MockResponse.json */; };
-		B10A906F2B30BD25002FED58 /* MockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = B10A906C2B30BD25002FED58 /* MockResponse.json */; };
 		B10A90722B30BE91002FED58 /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10A90712B30BE91002FED58 /* Deal.swift */; };
 		B10A90752B30BFAF002FED58 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10A906B2B30BCEB002FED58 /* MockNetworkManager.swift */; };
-		B10A90762B30BFB1002FED58 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10A906B2B30BCEB002FED58 /* MockNetworkManager.swift */; };
-		B10A90772B30BFB2002FED58 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10A906B2B30BCEB002FED58 /* MockNetworkManager.swift */; };
 		B10A90792B30C5F4002FED58 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10A90782B30C5F4002FED58 /* Color+Hex.swift */; };
 		B10A907D2B30CDBF002FED58 /* ImageCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10A907C2B30CDBF002FED58 /* ImageCarousel.swift */; };
 		B10A90802B30DAFC002FED58 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10A907F2B30DAFC002FED58 /* Strings.swift */; };
@@ -37,6 +33,9 @@
 		B10A90932B30E36F002FED58 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10A90922B30E36F002FED58 /* Topic.swift */; };
 		B10A90952B30E37E002FED58 /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10A90942B30E37E002FED58 /* Poll.swift */; };
 		B10A90972B30E393002FED58 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10A90962B30E393002FED58 /* Answer.swift */; };
+		B10A90CE2B3120A5002FED58 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10A90CD2B3120A5002FED58 /* Networking.swift */; };
+		B10A90E82B312899002FED58 /* MockDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10A90E72B312899002FED58 /* MockDataTests.swift */; };
+		B10A90EA2B3129AF002FED58 /* TestColorConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10A90E92B3129AF002FED58 /* TestColorConversion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +86,9 @@
 		B10A90922B30E36F002FED58 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		B10A90942B30E37E002FED58 /* Poll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poll.swift; sourceTree = "<group>"; };
 		B10A90962B30E393002FED58 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		B10A90CD2B3120A5002FED58 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		B10A90E72B312899002FED58 /* MockDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataTests.swift; sourceTree = "<group>"; };
+		B10A90E92B3129AF002FED58 /* TestColorConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestColorConversion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				B10A904C2B30B796002FED58 /* DailyMehTests.swift */,
+				B10A90E72B312899002FED58 /* MockDataTests.swift */,
+				B10A90E92B3129AF002FED58 /* TestColorConversion.swift */,
 			);
 			path = DailyMehTests;
 			sourceTree = "<group>";
@@ -179,6 +183,7 @@
 		B10A90692B30BCD4002FED58 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				B10A90CD2B3120A5002FED58 /* Networking.swift */,
 				B10A906A2B30BCE5002FED58 /* Mock */,
 				B10A90652B30B861002FED58 /* NetworkManager.swift */,
 			);
@@ -368,7 +373,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B10A906E2B30BD25002FED58 /* MockResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +380,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B10A906F2B30BD25002FED58 /* MockResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +396,7 @@
 				B10A90802B30DAFC002FED58 /* Strings.swift in Sources */,
 				B10A90752B30BFAF002FED58 /* MockNetworkManager.swift in Sources */,
 				B10A908B2B30E32F002FED58 /* Launch.swift in Sources */,
+				B10A90CE2B3120A5002FED58 /* Networking.swift in Sources */,
 				B10A90872B30E2F4002FED58 /* Response.swift in Sources */,
 				B10A90972B30E393002FED58 /* Answer.swift in Sources */,
 				B10A90682B30BAB1002FED58 /* DealViewModel.swift in Sources */,
@@ -414,8 +418,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B10A90762B30BFB1002FED58 /* MockNetworkManager.swift in Sources */,
+				B10A90EA2B3129AF002FED58 /* TestColorConversion.swift in Sources */,
 				B10A904D2B30B796002FED58 /* DailyMehTests.swift in Sources */,
+				B10A90E82B312899002FED58 /* MockDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +428,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B10A90772B30BFB2002FED58 /* MockNetworkManager.swift in Sources */,
 				B10A90592B30B796002FED58 /* DailyMehUITestsLaunchTests.swift in Sources */,
 				B10A90572B30B796002FED58 /* DailyMehUITests.swift in Sources */,
 			);
